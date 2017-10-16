@@ -1,0 +1,7 @@
+# configuration examples
+
+[core]
+Addr	http://localhost:8866
+ReadTimeout		6000000000
+WriteTimeout	6000000000
+MaxHeaderBytes	3145728
