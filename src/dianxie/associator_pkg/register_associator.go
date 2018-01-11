@@ -9,7 +9,7 @@ import (
 
 	_ "github.com/mattn/go-sqlite3"
 )
-
+/*
 type Associator_s struct {
 	Associator_Name                        string
 	Associator_Number                      string
@@ -34,7 +34,7 @@ type Associator_s struct {
 	Receipt_Print_Client_MechineName       string
 	Receipt_Print_Manager                  string
 }
-
+*/
 func Register_associator(associator Associator_s) error {
 	Sqlite_operation_lock.Lock()
 	sql_text := "SELECT count(*) FROM " + appconf.Tf.SqlAssociatorTable
